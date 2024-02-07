@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    .separator {
+        border-top: 1px solid #575151f6;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    button {
+
+        background-color: #163dc8f8;
+        color: #f0ececd6;
+        border: none;
+        cursor: pointer;
+    }
+
+    em,h1 {
+        color: #ffffff;
+        /* white color */
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #e39f9ff6;
+        padding: 20px;
+        box-shadow: 0 0 10px #f3efeff8;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="form-section active" id="form">
+            <center>
+                <top>
+                    <table width="400" cellpadding="10" cellspacing="10">
+                        <tr>
+                            <td colspan="2">
+                                <h1><div style="background-color: rgba(175, 239, 122, 0.986); color:white; width: 580px; height: 50px;" >Registration Form-SMIT</div></h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="1" style="font-weight: bold" ;>Select City:<br>
+                                    <input type="text" name="city" id="1" placeholder="Select City" size="30"
+                                        style="height: 30px;  border: 2px solid #1aff00;" /></td></label>
+                            <td><label for="2" style="font-weight: bold" ;>Select course or event:<br></label>
+                                <input type="text" name="course" id="2" placeholder="Select course or event" size="30"
+                                    style="height: 30px;  border: 2px solid #1aff00;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="3" style="font-weight: bold" ;>Full name:<br>
+                                    <input type="text" name="fullnam" id="3" placeholder="Full name:" size="30"
+                                        style="height: 30px;  border: 2px solid #1aff00;" /></td></label>
+                            <td><label for="4" style="font-weight: bold;">Father name:<br></label>
+                                <input type="text" name="fathnam" id="4" placeholder="Father name" size="30"
+                                    style="height: 30px;  border: 2px solid #1aff00;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="5" style="font-weight: bold;">Email:<br>
+                                    <input type="email" name="email" id="5" placeholder="Email" size="30"
+                                        style="height: 30px;  border: 2px solid #1aff00;" /></td></label>
+                            <td><label for="6" style="font-weight: bold;">Phone:<br></label>
+                                <input type="text" name="phone#" id="6" placeholder="Phone" size="30"
+                                    style="height: 30px;  border: 2px solid #1aff00;" />
+                            </td>
+                        <tr>
+                            <td><label for="7" style="font-weight: bold;">CNIC:<br>
+                                    <input type="text" name="CNIC#" id="7" placeholder="CNIC" size="30"
+                                        style="height: 30px;  border: 2px solid #1aff00;" />
+                            </td></label>
+                            <td><label for="8" style="font-weight: bold;">Father's CNIC(optional):<br></label>
+                                <input type="text" name="fatherCNIC" id="8" placeholder="Father's CNIC(optional)"
+                                    size="30" style="height: 30px;  border: 2px solid #1aff00;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="9" style="font-weight: bold;">Date of birth:</label><br>
+                                <input type="date" name="DOB" id="9"
+                                    style="width: 230px; height: 35px;  border: 2px solid #1aff00;">
+                            </td>
+                            <td>
+                                <label for="10" style="font-weight: bold;">Father's CNIC(optional):</label><br>
+                                <input type="text" name="F.CNIC" id="10" placeholder="Father's CNIC(optional)"
+                                    style="width: 230px; height: 30px;  border: 2px solid #1aff00;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="11" style="font-weight: bold;">Address:<br>
+                                    <input type="text" name="address" id="11" placeholder="Address"
+                                        style="height: 30px; width: 500px;  border: 2px solid #1aff00;" /></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="12" style="font-weight: bold;">Last Qualification </label><br>
+                                <select name="qualification" id="12" fdprocessedid="lywjxp"
+                                    style="width: 510px; height: 39px; border: 2px solid #1aff00;">
+                                    <option value="qualification" disabled="" selected>Last qualification</option>
+                                    <option value="matriculation">Matriculation</option>
+                                    <option value="Intermediate">Intermediate</option>
+                                    <option value="Undergraduate">Undergraduate</option>
+                                    <option value="Graduated">Graduated</option>
+                                    <option value="PhD">PhD</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="13" style="font-weight: bold;">Do you have a Laptop?</label><br>
+                                <select name="have laptop?" id="13" fdprocessedid="lywjxp"
+                                    style="width: 510px; height: 39px; border: 2px solid #1aff00;">
+                                    <option value="" disabled="" selected>Do you have a Laptop?</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="file" name="userpic" id="fileInput" style="display: none;" />
+                                <label for="fileInput"
+                                    style="font-weight: bold; cursor: pointer; position: relative; overflow: hidden;">
+                                    Upload your picture
+                                    <div style="width: 150px; height: 150px; border: 1px solid #ccc; overflow: hidden;">
+                                        <img id="previewImage" src="images/upload.webp" alt="Upload" width="100"
+                                            height="100" style="width: 100%; height: 100%; object-fit: cover;">
+                                    </div>
+                                </label>
+                            </td>
+                            <td><br>
+                                <br>
+                                With white or blue background<br>
+                                File size must be less than 1MB<br>
+                                File type:jpg,jpeg,png<br>
+                                Upload your recent passport size picture<br>
+                                Your face should be clearly visible without any glasses<br>
+                            </td>
+                        </tr>
+
+                        </tr>
+                        <tr class="separator">
+                            <td colspan="2" style="border-top: 1px solid #615b5bf9;"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <ol>
+                                    <li>I hereby, solemnly declare that
+                                        the data and facts mentioned herein are true and correct to the best of my
+                                        knowledge. Further, I will abide by all the established and future regulations
+                                        and
+                                        policies of SWIT</li>
+                                    <li>I hereby accept the
+                                        responsibilities of good conduct and guarantee that I will not be involved in
+                                        any
+                                        other activity, political or ethical, but learning during my stay in the
+                                        program.</li>
+                                    <li>Defiance will render my admission
+                                        canceled at any point in time.</li>
+                                    <li>Upon completion, of the course, I
+                                        will complete the required project by SWIT.</li>
+                                    <li>It's mandatory for female students
+                                        to wear abaya/hijab in the class</li>
+                                </ol>
+                        <tr>
+                            <td colspan="2">
+                                <button name="submit" value="SUBMIT"
+                                    style="height: 39px; width: 510px; font-weight: bold;"><em>SUBMIT</em></button>
+                            </td>
+                        </tr>
+                        </td>
+                        </tr>
+                    </table>
+                </top>
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>
